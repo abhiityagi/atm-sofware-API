@@ -1,0 +1,221 @@
+/* .previewContainer_QOycb video{
+    width: 30%;
+    height: auto;
+} */
+
+
+@import url("https://fonts.googleapis.com/css?family=Public+Sans&display=swap");
+body {
+    font-family: "Public Sans", sans-serif !important;
+    font-size: 18px !important;
+    color: #2d314d !important;
+}
+
+p {
+    cursor: default !important;
+}
+
+
+/*Introduction*/
+@media only screen and (min-width: 320px) and (max-width: 767.98px) {
+    .w-xs-50 {
+    width: 50% !important;
+}
+
+#introduction {
+    background-image: url("https://svgshare.com/i/JoA.svg") !important;
+    min-height: 50vh !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0% -8vh;
+    width: 100%;
+}
+
+#intro-img-holder {
+    top: -29% !important;
+}
+
+#intro-img {
+    width: 95% !important;
+}
+
+h2 {
+    margin-top: 2%;
+    cursor: default !important;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1198.98px) {
+    .w-md-50 {
+    width: 50% !important;
+}
+
+.w-md-85 {
+    width: 85% !important;
+}
+
+#introduction {
+    background-image: url("https://svgshare.com/i/JsH.svg") !important;
+    background-repeat: no-repeat;
+    background-position: 8% 112%;
+}
+
+#intro-img-holder {
+    top: -13% !important;
+    left: 20% !important;
+    height: 100% !important;
+}
+
+#intro-img {
+    height: 110% !important;
+}
+
+h2 {
+    margin-top: 8vh;
+}
+}
+@media only screen and (min-width: 1200px) {
+.w-md-50 {
+    width: 50% !important;
+}
+
+.w-md-85 {
+    width: 85% !important;
+}
+
+#introduction {
+    background-image: url("https://svgshare.com/i/JsH.svg") !important;
+    background-repeat: no-repeat;
+    background-position: 11% 112%;
+}
+
+#intro-img-holder {
+    top: -13% !important;
+    left: 17% !important;
+    height: 100% !important;
+}
+
+#intro-img {
+    height: 110% !important;
+}
+
+h2 {
+    margin-top: 8vh;
+    cursor: default !important;
+}
+}
+.color-grayish-blue {
+    color: #9698a6 !important;
+}
+
+#request-invite-btn {
+    background: linear-gradient(90deg, #31d35c, #2bb7da) !important;
+    font-size: 18px !important;
+    display: block;
+}
+
+/* Choose Easybank */
+@media only screen and (min-width: 320px) and (max-width: 767.98px) {
+    #choose-easybank {
+        background-color: #f3f4f6 !important;
+}
+
+.double-gutter-md-left-padding {
+    padding-left: 0px !important;
+}
+}
+@media only screen and (min-width: 768px) {
+#choose-easybank {
+    background-color: #f3f4f6 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    /* to counter container max-width for md+ screens*/
+}
+
+.gutter-md-left-padding {
+    padding-left: 15px !important;
+}
+
+.double-gutter-md-left-padding {
+    padding-left: 30px !important;
+}
+}
+.card {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f3f4f6 !important;
+    border: none !important;
+    margin: 0 !important;
+    cursor: default !important;
+}
+.card h4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+.card img {
+    width: 25% !important;
+}
+.card p {
+    width: 90%;
+    font-size: 16px !important;
+}
+
+/*footer*/
+@media only screen and (min-width: 320px) and (max-width: 767.98px) {
+#social-media-icons i {
+    color: white !important;
+    font-size: 26px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #social-media-icons i:hover, #social-media-icons i:active {
+    color: #2bb7da !important;
+  }
+
+  .footer-link {
+    width: 100% !important;
+    text-align: center !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    padding-top: 0.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #social-media-icons i {
+    color: white !important;
+    font-size: 24px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #social-media-icons i:hover, #social-media-icons i:active {
+    color: #2bb7da !important;
+  }
+
+  .footer-link {
+    width: 100% !important;
+    text-align: left !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    padding-top: 0.5rem;
+  }
+}
+.footer-link:active, .footer-link:hover {
+  color: #2bb7da !important;
+}
+
+footer {
+  background-color: #2d314d !important;
+}
+footer a {
+  text-decoration: none !important;
+}
+
+#footer-request-invite-btn {
+  background: linear-gradient(90deg, #31d35c, #2bb7da) !important;
+  font-size: 16px !important;
+  display: block;
+}
+
+#copyright-text {
+  font-size: 16px;
+  cursor: default !important;
+}

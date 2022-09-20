@@ -1,0 +1,46 @@
+<div class="container my-3">
+    <h1 class = "mb-3">Money Transfer</h1>
+    <div class="row">
+        <div class="col-4">
+            <h4 class="fw-bold text-danger" *ngIf="valid == 'invalid'">Check Credentials again or Insufficient Balance</h4>
+            <h4 class="fw-bold text-primary" *ngIf="valid == 'valid'">{{currentDate | date:'dd-MM-yyyy hh:mm a'}}</h4>
+            <h4 class="fw-bold text-success" *ngIf="valid == 'valid'">Hi <span class="WebRupee">&#x20B9;</span> {{sendMoneyRequest.amountTransfer}}, is successfully transferred from your Bank Account.</h4>
+            <form #form="ngForm" (ngSubmit)="transferMoney()" *ngIf="valid == 'invalid' || valid == ''">
+                <div class="mb-3">
+                    <img src="https://img.icons8.com/dusk/25/000000/merchant-account.png" class="me-2"/>
+                    <label for="accno" class="form-label">Your Account No (16 Digits)</label>
+                    <input type="number" class="form-control" id="accno" name="accountNumber" placeholder="0000 0000 0000 0000" [(ngModel)] = 'sendMoneyRequest.accountNumber' required>
+                </div>
+                <div class="mb-3">
+                    <img src="https://img.icons8.com/nolan/25/merchant-account.png" class="me-2"/>
+                    <label for="rec-accno" class="form-label">Recepient Account No (16 Digits)</label>
+                    <input type="number" class="form-control" id="rec-accno" name="recipientAccountNumber" placeholder="0000 0000 0000 0000" [(ngModel)] = 'sendMoneyRequest.recipientAccountNumber' required>
+                </div>
+                <div class="mb-3">
+                    <img src="https://img.icons8.com/nolan/25/merchant-account.png" class="me-2"/>
+                    <label for="branch" class="form-label">Branch Name</label>
+                    <select id="branch" class="form-control" name="branchName" [(ngModel)] = 'sendMoneyRequest.branchName' required>
+                        <option selected>Choose Branch</option>
+                        <option>SBIBank Mohali</option>
+                        <option>PNBBank Himachal</option>
+                        <option>YesBank Bhiwadi</option>
+                        <option>AxisBank Dharuhera</option>
+                    </select>
+                    <!-- <input type="text" class="form-control" id="branch" name="branchName" placeholder="Branch" [(ngModel)] = 'sendMoneyRequest.branchName' required> -->
+                </div>
+                <div class="mb-3">
+                    <img src="https://img.icons8.com/fluency/30/000000/enter-pin.png" class="me-2"/>
+                    <label for="pin" class="form-label">Your Pin (4 Digits)</label>
+                    <input type="password" minlength="4" maxlength="4" class="form-control" id="pin" name="pin" placeholder="x x x x" [(ngModel)] = 'sendMoneyRequest.pin' required>
+                </div>
+                <div class="mb-3">
+                    <img src="https://img.icons8.com/external-itim2101-flat-itim2101/30/000000/external-money-transfer-finance-itim2101-flat-itim2101-1.png" class="me-2"/>
+                    <label for="amount" class="form-label">Transfer Amount</label>
+                    <input type="number" class="form-control" id="amountTransfer" name="amountTransfer" placeholder="&#x20B9;" [(ngModel)] = 'sendMoneyRequest.amountTransfer' required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-hover color-7">TRANSFER</button>
+            </form>
+        </div>
+    </div>
+</div>

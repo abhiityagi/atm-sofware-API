@@ -1,0 +1,11 @@
+.logom img{
+    height: 50px;
+    width: 90%;
+}
+
+.logom{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    width: fit-content;
+}
